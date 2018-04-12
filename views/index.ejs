@@ -1,98 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<meta name="description" content="Beauty Salon - provide the easy responsive free website templates. You can easily customize and make your own website for your startup business.">
-<meta name="keywords" content="bootstrap template, Responsive Template, Website Template, free website templates, free website template download ">
-<title>Beauty Salon | Bootstrap | Free Responsive Website Templates</title>
-<!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<!-- Style css -->
-<link rel="stylesheet" href="css/style.css">
-<!-- Font Awesome CSS -->
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/fontello.css">
-<!-- animsition css -->
-<link rel="stylesheet" type="text/css" href="css/animsition.min.css">
-<!-- owl Carousel Css -->
-<link href="css/owl.carousel.css" rel="stylesheet">
-<link href="css/owl.theme.css" rel="stylesheet">
-<!-- Font css -->
-<link rel="stylesheet" href="css/imagehover.min.css">
-<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i%7cLibre+Baskerville:400,400i,700" rel="stylesheet">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body class="animsition">
-<div class="header">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-        <div class="logo"> <a href="index.ejs"><img src="images/logo.png" alt=""></a> </div>
-      </div>
-      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-            <div class="call-block">
-              <h3 class="call-no">+91- 9750014453</h3>
-              <p class="call-text">Need any help?</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-5 col-xs-6">
-            <div class="time-block">
-              <h3 class="time">Mon-Sun : 10am:07pm</h3>
-              <p class="call-text">Opening Timing</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
-            <div class="top-btn"> <a href="contact.ejs" class="btn btn-default">Make Appointment</a> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- navigation -->
-<div class="navigation-wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="navigation" id="navigation">
-          <ul>
-            <li class="active"><a href="index.ejs" title="Home" class="animsition-link">Home</a></li>
-            <li><a href="service-list.ejs" title="Service List" class="animsition-link">Service List</a>
-              <ul>
-                <li><a href="service-list.ejs" title="Service List">Service List</a></li>
-                <li><a href="service-detail.ejs" title="Service Detail">Service Detail</a></li>
-              </ul>
-            </li>
-            <li><a href="blog-default.ejs" title="Blog" class="animsition-link">News</a>
-              <ul>
-                <li><a href="blog-default.ejs" title="Blog" class="animsition-link">Blog Default</a></li>
-                <li><a href="blog-single.ejs" title="Blog Single" class="animsition-link">Blog Single</a></li>
-              </ul>
-            </li>
-            <li><a href="testimonial.ejs" title="Features" class="animsition-link">Features</a>
-              <ul>
-                <li><a href="testimonial.ejs" title="Testimonial" class="animsition-link">Testimonial</a></li>
-              </ul>
-            </li>
-            <li><a href="pricing.ejs" title="Pricing" class="animsition-link">Pricing</a></li>
-            <li><a href="contact.ejs" title="Contact Us" class="animsition-link">Contact</a> </li>
-            <li><a href="style-guide.ejs" title="Style Guide" class="animsition-link">style guide</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<%-include('partials/header.ejs')%>
+
 <div class="hero-section">
   <!-- navigation -->
   <div class="container">
@@ -101,7 +8,7 @@
         <div class="hero-caption">
           <h1 class="hero-title">Looking Professional Beauty Salon?</h1>
           <p class="hero-text">Beauty salon provide you wide range of beauty services like Facial, hair style, waxing, makeup etc...Beauty salon provide you wide range of beauty services like Facial, hair style, waxing, makeup etc...</p>
-          <a href="service-list.ejs" class="btn btn-default">view services</a> </div>
+          <a href="/admin/serviceList" class="btn btn-default">view services</a> </div>
       </div>
     </div>
   </div>
@@ -113,25 +20,25 @@
         <div class="section-title">
           <h1 class="heading-line">Beauty Salon Services</h1>
           <p class="mb40">Dolor sit amet consectetur adipiscing uspendisse volutpat feliscommodo bibendum odionunc tincidu.</p>
-          <a href="service-list.ejs" class="btn btn-default">view services</a> </div>
+          <a href="/admin/serviceList" class="btn btn-default">view services</a> </div>
       </div>
       <div class="col-lg-offest-1 col-lg-8 col-md-offset-1 col-md-8 col-sm-12 col-xs-12">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="service-block mb60 outline">
               <div class="service-caption pinside40">
-                <h2 class="service-title"><a href="service-list.ejs" class="title">Hair Style</a></h2>
+                <h2 class="service-title"><a href="/admin/serviceList" class="title">Hair Style</a></h2>
                 <p class="mb40">Cras auctor laoreet duid temsem cursus sedenean elementumest vitae.</p>
-                <a href="service-list.ejs" class="btn-link">Read More</a> </div>
+                <a href="/admin/serviceList" class="btn-link">Read More</a> </div>
               <div class="service-img"> <img src="images/service-1.jpg" class="img-responsive" alt=""> </div>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="service-block mb60 outline">
               <div class="service-caption pinside40">
-                <h2 class="service-title"><a href="service-list.ejs" class="title">Makeup</a></h2>
+                <h2 class="service-title"><a href="/admin/serviceList" class="title">Makeup</a></h2>
                 <p class="mb40">Maecenas sitamet venenatis nulla eget lobortis loreduis lorem eget nulla.</p>
-                <a href="service-list.ejs" class="btn-link">Read More</a> </div>
+                <a href="/admin/serviceList" class="btn-link">Read More</a> </div>
               <div class="service-img"> <img src="images/service-2.jpg" class="img-responsive" alt=""> </div>
             </div>
           </div>
@@ -175,7 +82,7 @@
           <div class="section-title">
             <h1 class="heading-line">Our Customer’s Reviews</h1>
             <p class="mb40">Nulla necvenenatis lectus sitamet is convallis nisnteger libero velit lorem egestas sitmet digneu tellus. </p>
-            <a href="testimonial.ejs" class="btn btn-default">view reviews</a> </div>
+            <a href="/admin/testimonial" class="btn btn-default">view reviews</a> </div>
         </div>
       </div>
       <div class="col-lg-offest-1 col-lg-8 col-md-offset-1 col-md-8 col-sm-12 col-xs-12">
@@ -422,7 +329,7 @@
           <h2 class="footer-title">Quick Links</h2>
           <ul class="listnone">
             <li><i class="fa fa-caret-right"></i><a href="index.ejs">Home</a></li>
-            <li><i class="fa fa-caret-right"></i><a href="service-list.ejs">Services</a></li>
+            <li><i class="fa fa-caret-right"></i><a href="/admin/serviceList">Services</a></li>
             <li><i class="fa fa-caret-right"></i><a href="testimonial.ejs">Testimonial</a></li>
             <li><i class="fa fa-caret-right"></i><a href="blog-default.ejs">News</a></li>
             <li><i class="fa fa-caret-right"></i><a href="pricing.ejs">Pricing</a></li>
@@ -433,30 +340,5 @@
     </div>
   </div>
 </div>
-<div class="tiny-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Copyrights@2017 | All Rights Reserve</div>
-    </div>
-  </div>
-</div>
-<!-- back to top icon -->
-<a href="#0" class="cd-top" title="Go to top">Top</a>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/menumaker.js"></script>
-<!-- animsition -->
-<script type="text/javascript" src="js/animsition.js"></script>
-<script type="text/javascript" src="js/animsition-script.js"></script>
-<!-- sticky header -->
-<script type="text/javascript" src="js/jquery.sticky.js"></script>
-<script type="text/javascript" src="js/sticky-header.js"></script>
-<!-- testimonial-carousel--> 
-<script type="text/javascript" src="js/owl.carousel.min.js"></script> 
-<script type="text/javascript" src="js/testimonial-carousel.js"></script> 
-<!-- Back to top script -->
-<script src="js/back-to-top.js" type="text/javascript"></script>
-</body>
-</html>
+
+<%-include('partials/footer.ejs')%>

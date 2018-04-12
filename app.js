@@ -7,10 +7,9 @@ var app = express()
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.use(express.static("style"));
+var admin = require('./routes/api.js');
 
- 
-app.get('/', function (req, res) {
-  res.render('index.ejs')
-})
- 
+app.use('/admin',admin);
+
+
 app.listen(3000, console.log('Example app listening on port 3000!'));
