@@ -15,19 +15,19 @@
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bg-primary pinside40">
         <div class="contact-info">
-          <div class="logo mb40"> <a href="/admin"><img src="images/logo-white.png" class="img-responsive" alt=""></a> </div>
+          <div class="logo mb40"> <a href="/admin"><img src="style/images/logo-white.png" class="img-responsive" alt=""></a> </div>
           <ul class="listnone">
             <li><i class="icon-placeholder icon-secondary icon-2x"></i>
               <address>
-              9870 St Vincent Place, <br>
-              Glasgow, DC 45
+             1175,Gondu Compound, civil lines <br>
+              Jhansi,U.P, 284003
               </address>
             </li>
             <li><i class=" icon-phone-call icon-secondary icon-2x"></i>
               <p>+91 - 9750014453</p>
             </li>
             <li><i class="icon-email icon-secondary icon-2x"></i>
-              <p>beautysalon@gmail.com</p>
+              <p>yogita3279@hotmail.com</p>
             </li>
             <li><i class=" icon-clock icon-secondary icon-2x"></i>
               <p>Mon-Sun : 10am : 07pm</p>
@@ -42,7 +42,7 @@
           </div>
         </div>
         <div class="row">
-          <form>
+          <form method="POST" action="/admin/contact">
             <!-- Textarea -->
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
               <!-- Text input-->
@@ -97,8 +97,8 @@
     <div class="row">
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="footer-widget bg-white pinside30 mb30">
-          <div class="logo mb30"> <a href="images/logo.png"><img src="images/logo.png" class="img-responsive" alt=""></a> </div>
-          <p class="mb30">Cras ut mauris fermentum pulvinar us utempus magivamus molestie molestie pulvin estibulum acvehicula erurabitur arcuornare ipsum.</p>
+          <div class="logo mb30"> <a href="style/images/logo.png"><img src="style/images/logo.png" class="img-responsive" alt=""></a> </div>
+          <p class="mb30">We provide all beauty services, pamper yourself with best beauty treatment.</p>
           <div class="footer-social"><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-google-plus"></i></a></div>
         </div>
       </div>
@@ -110,7 +110,7 @@
               <div class="row">
                 <div class="col-md-2"><i class="fa fa-phone"></i></div>
                 <div class="col-md-10">
-                  <h4 class="call-no"><a href="/admin/contact">+91 - 9750014453</a></h4>
+                  <h4 class="call-no"><a href="/admin/contact">+91 - 8750014453</a></h4>
                 </div>
               </div>
             </li>
@@ -118,7 +118,7 @@
               <div class="row">
                 <div class="col-md-2"><i class="fa fa-envelope-o"></i></div>
                 <div class="col-md-10">
-                  <h4 class="mail-text"><a href="/admin/contact">beautysalon@gmail.com</a></h4>
+                  <h4 class="mail-text"><a href="/admin/contact">yogita3279@hotmail.com</a></h4>
                 </div>
               </div>
             </li>
@@ -139,8 +139,6 @@
           <ul class="listnone">
             <li><i class="fa fa-caret-right"></i><a href="/admin">Home</a></li>
             <li><i class="fa fa-caret-right"></i><a href="/admin/serviceList">Services</a></li>
-            <li><i class="fa fa-caret-right"></i><a href="/admin/testimonial">Testimonial</a></li>
-            <li><i class="fa fa-caret-right"></i><a href="/admin/blogDefault">News</a></li>
             <li><i class="fa fa-caret-right"></i><a href="/admin/pricing">Pricing</a></li>
             <li><i class="fa fa-caret-right"></i><a href="/admin/contact">Contact</a></li>
         </ul>
@@ -176,6 +174,14 @@
 
         });
     }
+
+    function UserAction() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+    var response = JSON.parse(xhttp.responseText);
+}
     </script> 
 <script src="https://maps.googleapis.com/maps/api/js?&callback=initMap" async defer></script>
 </body>
